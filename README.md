@@ -44,7 +44,7 @@ To run this project on your local machine, follow these steps:
 
 | Start Screen | Quiz Interface | Results & Review |
 | :---: | :---: | :---: |
-| ![Start](https://via.placeholder.com/200x150?text=Start+Screen) | ![Quiz](https://via.placeholder.com/200x150?text=Quiz+UI) | ![Results](https://via.placeholder.com/200x150?text=Results) |
+| ![Start](startscreen.png) | ![Quiz](quizinterface.png) | ![Results](result-review.png) |
 
 ## 🧩 How It Works
 
