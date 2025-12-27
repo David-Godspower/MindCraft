@@ -42,7 +42,7 @@ To run this project on your local machine, follow these steps:
 
 | Start Screen | Quiz Interface | Results & Review |
 | :---: | :---: | :---: |
-| ![Start](./startscreen.png) | ![Quiz](./quizinterface.png) | ![Results](./result-review.png) |
+| ![Start](https://raw.githubusercontent.com/David-Godspower/MindXam/main/startscreen.png) | ![Quiz](./quizinterface.png) | ![Results](./result-review.png) |
 
 ## 🧩 How It Works
 
