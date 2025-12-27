@@ -1,5 +1,4 @@
- 
-      /* --- CSS STYLES --- */
+/* --- CSS STYLES --- */
       body {
         margin: 0;
         padding: 0;
@@ -12,9 +11,9 @@
         flex-direction: column;
         min-height: 100vh;
       }
-      main {
-        flex: 1;
-      }
+      main { flex: 1; }
+      
+      /* LOADER */
       .loader {
         width: 100%;
         height: 100%;
@@ -28,6 +27,9 @@
         z-index: 9999;
         flex-direction: column;
       }
+      .loader h1 { font-size: 3rem; margin-bottom: 10px; }
+        .loader h2 { font-size: 2rem; margin-bottom: 20px; }
+      .loader p { font-size: 1.5rem; margin-bottom: 20px; }
       .spinner {
         border: 16px solid #f3f3f3;
         border-top: 16px solid #3498db;
@@ -37,10 +39,9 @@
         margin-top: 30px;
         animation: spin 2s linear infinite;
       }
-      @keyframes spin {
-        0% { transform: rotate(0deg); }
-        100% { transform: rotate(360deg); }
-      }
+      @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+      /* MENUS & CONTAINERS */
       .start-menu {
         display: flex;
         flex-direction: column;
@@ -50,35 +51,38 @@
         width: 100%;
         color: white;
       }
-      .start-menu h1 {
-        font-size: 4rem;
-        margin-bottom: 20px;
+      .start-menu h1 { font-size: 4rem; margin-bottom: 20px; text-align: center; }
+      .start-menu p { font-size: 2rem; margin-bottom: 30px; text-align: center; }
+      
+      /* DROPDOWN STYLE */
+      select {
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 10px;
+        border: none;
+        margin-bottom: 30px;
+        width: 300px;
         text-align: center;
+        cursor: pointer;
       }
-      .start-menu p {
-        font-size: 2rem;
-        margin-bottom: 50px;
-        text-align: center;
-      }
+
       .start-menu button {
         background-color: yellow;
         padding: 5px 10px;
         width: 200px;
-        height: 100px;
+        height: 80px;
         border-radius: 20px;
         font-weight: bold;
-        font-size: 35px;
+        font-size: 25px;
         cursor: pointer;
         border: none;
+        color: black;
       }
-      .start-menu button:hover {
-        transform: scale(1.05);
-      }
-      
-      /* QUIZ CONTAINER */
+      .start-menu button:hover { transform: scale(1.05); }
+
       #quiz-container {
         position: relative;
-        display: none; /* Hidden by default */
+        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -103,25 +107,12 @@
         border-radius: 10px;
         box-sizing: border-box;
       }
-      #timer {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
-        display: flex;
-        align-items: center;
-      }
-      #timer svg {
-        width: 24px;
-        height: 24px;
-        margin-right: 8px;
-        fill: white;
-      }
-      #questions {
-        font-size: 1.3rem;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px;
-      }
+      .top h1 { color: white;}
+      #timer { font-size: 1.5rem; font-weight: bold; color: white; display: flex; align-items: center; }
+      #timer svg { width: 24px; height: 24px; margin-right: 8px; fill: white; }
+      
+      #questions { font-size: 1.3rem; font-weight: bold; text-align: center; margin-bottom: 20px; }
+      
       #options button {
         width: 100%;
         padding: 12px;
@@ -133,15 +124,9 @@
         font-size: 1rem;
         transition: 0.2s;
       }
-      #options button:hover {
-        background-color: yellow;
-      }
-      .buttons {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        margin-top: 25px;
-      }
+      #options button:hover { background-color: yellow; }
+      
+      .buttons { display: flex; justify-content: space-between; width: 100%; margin-top: 25px; }
       #previous-btn, #next-btn {
         background-color: black;
         color: white;
@@ -153,8 +138,7 @@
       }
       #next-btn:hover { background-color: green; }
       #previous-btn:hover { background-color: red; }
-      
-      /* PROGRESS BAR */
+
       #progressBarContainer {
         width: 100%;
         height: 10px;
@@ -163,34 +147,25 @@
         margin-bottom: 20px;
         overflow: hidden;
       }
-      #progressBar {
-        height: 100%;
-        width: 0%;
-        background-color: #3498db;
-        transition: width 0.3s ease;
-      }
-      
-      /* RESULTS CONTAINER - FIXED SCROLLING */
+      #progressBar { height: 100%; width: 0%; background-color: #3498db; transition: width 0.3s ease; }
+
       .results-container {
-        display: none; /* Hidden by default */
+        display: none;
         flex-direction: column;
         align-items: center;
-        justify-content: flex-start; /* Aligns content to top */
+        justify-content: flex-start;
         width: 50%;
         max-width: 600px;
-        max-height: 80vh; /* Prevents it from being too tall */
+        max-height: 80vh;
         margin: 100px auto;
         padding: 40px;
         background-color: white;
         color: black;
         border-radius: 20px;
-        overflow-y: auto; /* Adds scrollbar if list is long */
+        overflow-y: auto;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
       }
-      .results-container h2 {
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-      }
+      
       #restart-btn {
         margin-top: 20px;
         padding: 10px 20px;
@@ -201,11 +176,8 @@
         border-radius: 10px;
         cursor: pointer;
       }
-      #restart-btn:hover {
-        background-color: green;
-      }
-      
-      /* REVIEW SECTION */
+      #restart-btn:hover { background-color: green; }
+
       #review-section {
         width: 100%;
         margin-top: 20px;
@@ -223,19 +195,6 @@
         border: 1px solid #ddd;
       }
 
-      /* FOOTER */
-      footer {
-        margin-top: 50px;
-        padding-bottom: 20px;
-        text-align: center;
-      }
-      footer a {
-        color: white;
-        font-size: 24px;
-        text-decoration: none;
-        margin: 0 10px;
-      }
-      footer a:hover i {
-        transform: scale(1.2);
-      }
-    
+      footer { margin-top: 50px; padding-bottom: 20px; text-align: center; }
+      footer a { color: white; font-size: 24px; text-decoration: none; margin: 0 10px; }
+      footer a:hover i { transform: scale(1.2); }
