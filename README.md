@@ -60,7 +60,7 @@ To run this project on your local machine, follow these steps:
 
 * Portfolio: [david-godspower.github.io](https://david-godspower.github.io/david-portfolio/)
 * LinkedIn: [David Ajala](https://www.linkedin.com/in/david-ajala-a93b862a1/)
-* Twitter/X: [@ajala28981](https://x.com/ajala28981)
+* Twitter/X: [David Ajala](https://x.com/ajala28981)
 * Email: ajaladavid11@gmail.com
 
 ## 📄 License
