@@ -12,16 +12,27 @@
   </head>
   <body>
     <div class="loader" id="loader">
-      <h1>Loading...</h1>
-      <p>Please wait while the quiz loads.</p>
+      <h1>MindXam</h1>
+      <h2>Loading...</h2>
+      <p>Please wait while we prepare the app.</p>
       <div class="spinner"></div>
     </div>
 
     <main class="content" style="display: none;">
-      
       <div class="start-menu" id="start-menu">
         <h1>Welcome to MindXam</h1>
-        <p>Test your knowledge here!</p>
+        <p>Select a category to begin:</p>
+        
+        <select id="category-select">
+            <option value="any">Any Category</option>
+            <option value="18">Technology (Computers)</option>
+            <option value="24">Current Affairs (Politics)</option>
+            <option value="21">Sports</option>
+            <option value="23">History</option>
+            <option value="9">General Knowledge</option>
+            <option value="10">Books & Literature</option>
+        </select>
+
         <button id="start-btn">Start Quiz</button>
       </div>
 
@@ -34,10 +45,7 @@
               01:00
             </div>
           </span>
-          
-          <div id="progressBarContainer">
-            <div id="progressBar"></div>
-          </div>
+          <div id="progressBarContainer"><div id="progressBar"></div></div>
           
           <div class="questionsoptions">
             <div id="questions"></div>
@@ -54,7 +62,7 @@
         <h2>Your Score:</h2>
         <h1 id="score" style="font-size: 3rem; margin: 10px 0;"></h1>
         <button id="restart-btn">Restart Quiz</button>
-        </div>
+      </div>
 
     </main>
 
